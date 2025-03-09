@@ -1,6 +1,6 @@
 <%-- 
-    Document   : productDetails
-    Created on : Mar 9, 2025, 12:52:26 PM
+    Document   : home.jsp
+    Created on : Mar 9, 2025, 11:03:04 AM
     Author     : ADMIN
 --%>
 
@@ -9,8 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Product details Page</title>
-        <link rel="stylesheet" href="./css/productDetails.css"> 
+        <title>Home Page</title>
+        <link rel="stylesheet" href="./css/home.css"> 
+        <style>
+            #content {
+                border: 1px solid #ccc;
+                height: 400px; /* Giới hạn chiều cao */
+                overflow: hidden; /* Ẩn nội dung tràn */
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -50,50 +57,22 @@
                 </div>
             </div>
 
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="https://agiay.vn/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/TEST61-12-2-768x768.jpg.webp" alt="Nike Air Force 1 White Pink">
-                </div>
-                <div class="product-details">
-                    <div class="rating">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <h2>NIKE AIR FORCE 1 WHITE PINK</h2>
-                    <p class="product-code">Mã SP: CT3839 107</p>
-                    <p class="price">3,600,000 ₫</p>
-                    <div class="size-selection">
-                        <p>CHỌN SIZE GIÀY</p>
-                        <select>
-                            <option value="40">40</option>
-                            <option value="41">41</option>
-                            <option value="42">42</option>
-                        </select>
-                    </div>
-                    <div class="quantity-controls">
-                        <button class="quantity-button">-</button>
-                        <span>1</span>
-                        <button class="quantity-button">+</button>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="add-to-cart">THÊM VÀO GIỎ</button>
-                        <button class="buy-now"><a href="shoppingCart.jsp">MUA NGAY</a></button>
-                    </div>
-                    <p class="order-phone">Hoặc đặt mua: 0909300746 (Tư vấn Miễn phí)</p>
-                    <div class="social-icons">
-                        <img src="" alt="Facebook">
-                        <img src="path/to/twitter-icon.png" alt="Twitter">
-                        <img src="path/to/pinterest-icon.png" alt="Pinterest">
-                        <img src="path/to/messenger-icon.png" alt="Messenger">
-                        <img src="path/to/zalo-icon.png" alt="Zalo">
+            <div class="content">
+                <div class="product-card">       
+                    <div class="product-grid">
+                        <a href="productDetails.jsp">
+                            <div class="product">
+                                <div class="discount">-28%</div>
+                                <img src="https://agiay.vn/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/TEST61-12-2-768x768.jpg.webp" alt="NIKE STRUCTURE 25">
+                                <h3>NIKE STRUCTURE 25</h3>
+                                <div class="price">
+                                    <span class="new-price">2,600,000 ₫</span>
+                                    <span class="old-price">3,600,000 ₫</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="contact-button">
-                <img src="path/to/contact-icon.png" alt="Liên hệ">
             </div>
 
             <footer>
@@ -130,5 +109,7 @@
                 </div>
 
             </footer>
+        </div>
+
     </body>
 </html>

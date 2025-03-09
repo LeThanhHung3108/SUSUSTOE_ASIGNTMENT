@@ -7,6 +7,7 @@ package Model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 /**
  *
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 public class OrderDTO {
     private String orderID;
     private int userID;
-    private LocalDateTime orderDate;
+    private Timestamp orderDate;
     private String shippingAddress;
     private String orderStatus;
     private BigDecimal totalAmount;
@@ -23,7 +24,7 @@ public class OrderDTO {
     public OrderDTO() {
     }
 
-    public OrderDTO(String orderID, int userID, LocalDateTime orderDate, String shippingAddress, String orderStatus, BigDecimal totalAmount) {
+    public OrderDTO(String orderID, int userID, Timestamp orderDate, String shippingAddress, String orderStatus, BigDecimal totalAmount) {
         this.orderID = orderID;
         this.userID = userID;
         this.orderDate = orderDate;
@@ -48,11 +49,11 @@ public class OrderDTO {
         this.userID = userID;
     }
 
-    public LocalDateTime getOrderDate() {
+    public Timestamp getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(LocalDateTime orderDate) {
+    public void setOrderDate(Timestamp orderDate) {
         this.orderDate = orderDate;
     }
 

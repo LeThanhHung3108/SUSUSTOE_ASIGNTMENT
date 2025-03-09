@@ -1,11 +1,11 @@
 .div-fixed {
-  position: sticky;
-  top: 0; /* Cố định ở phía trên màn hình */
-  left: 0px;
-  width: 100%; /* Chiều rộng 100% (có thể thay đổi) */
-  background-color: #f0f0f0; /* Màu nền (có thể thay đổi) */
-  padding: 10px; /* Khoảng cách lề (có thể thay đổi) */
-  z-index: 100; /* Đảm bảo div nằm trên các phần tử khác */
+    position: sticky;
+    top: 0; /* Cố định ở phía trên màn hình */
+    left: 0px;
+    width: 100%; /* Chiều rộng 100% (có thể thay đổi) */
+    background-color: #f0f0f0; /* Màu nền (có thể thay đổi) */
+    padding: 10px; /* Khoảng cách lề (có thể thay đổi) */
+    z-index: 100; /* Đảm bảo div nằm trên các phần tử khác */
 }
 
 .storeName{
@@ -39,7 +39,7 @@
     margin-left: auto;
 }
 .content{
-max-height: 1000px;
+    max-height: 1000px;
     display: flex;
 }
 .product-card{
@@ -66,4 +66,37 @@ max-height: 1000px;
     color: white;
     padding: 5px;
     position: absolute;
+}
+
+footer {
+    margin-top: 50px;
+            background-color: #f7a831; /* Màu nền cam */
+            font-family: sans-serif;
+            color: black;
+            padding: 20px;
+        }
+.footer {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.left, .middle, .right {
+    flex: 1;
+}
+.left p, .middle p {
+    margin: 5px 0;
+}
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }

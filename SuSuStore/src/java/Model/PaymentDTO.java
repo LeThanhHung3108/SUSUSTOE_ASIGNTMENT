@@ -6,7 +6,7 @@
 package Model;
 
 import java.time.LocalDateTime;
-
+import java.sql.Timestamp;
 /**
  *
  * @author ADMIN
@@ -16,14 +16,14 @@ public class PaymentDTO {
     private String paymentID;
     private String orderID;
     private String paymentMethod;
-    private LocalDateTime paymentDate;
+    private Timestamp paymentDate;
     private String paymentStatus;
 
     // Constructors
     public PaymentDTO() {
     }
 
-    public PaymentDTO(String paymentID, String orderID, String paymentMethod, LocalDateTime paymentDate, String paymentStatus) {
+    public PaymentDTO(String paymentID, String orderID, String paymentMethod, Timestamp paymentDate, String paymentStatus) {
         this.paymentID = paymentID;
         this.orderID = orderID;
         this.paymentMethod = paymentMethod;
@@ -56,11 +56,11 @@ public class PaymentDTO {
         this.paymentMethod = paymentMethod;
     }
 
-    public LocalDateTime getPaymentDate() {
+    public Timestamp getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(LocalDateTime paymentDate) {
+    public void setPaymentDate(Timestamp paymentDate) {
         this.paymentDate = paymentDate;
     }
 

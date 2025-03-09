@@ -6,6 +6,7 @@
 package Model;
 
 import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 /**
  *
@@ -15,13 +16,13 @@ public class CartDTO {
     private int userID;
     private String productID;
     private int quantity;
-    private LocalDateTime addedDate;
+    private Timestamp addedDate;
 
     // Constructors
     public CartDTO() {
     }
 
-    public CartDTO(int userID, String productID, int quantity, LocalDateTime addedDate) {
+    public CartDTO(int userID, String productID, int quantity, Timestamp addedDate) {
         this.userID = userID;
         this.productID = productID;
         this.quantity = quantity;
@@ -53,11 +54,11 @@ public class CartDTO {
         this.quantity = quantity;
     }
 
-    public LocalDateTime getAddedDate() {
+    public Timestamp getAddedDate() {
         return addedDate;
     }
 
-    public void setAddedDate(LocalDateTime addedDate) {
+    public void setAddedDate(Timestamp addedDate) {
         this.addedDate = addedDate;
     }
 

@@ -49,11 +49,20 @@
                         <p>SUSUSTORE</p>
                     </div>
 
-                    <div class="search-cart">
-                        <input type="text" placeholder="Nhập từ cần tìm">
-                        <button>Q</button>
-                        <a href="#" class="cart"></a> 
+                   <form action="search" method="post" class="form-inline my-2 my-lg-0">
+                <div class="input-group input-group-sm">
+                    <input oninput="searchByName(this)" value="${txtS}" name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary btn-number">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
+                </div>
+                <a class="btn btn-success btn-sm ml-3" href="show">
+                    <i class="fa fa-shopping-cart"></i> Cart
+                    <span class="badge badge-light">3</span>
+                </a>
+            </form>
                 </div>
             </div>
 

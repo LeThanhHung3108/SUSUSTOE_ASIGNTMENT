@@ -12,13 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <c:set var="msg" value="${requestScope.ERROR}" />
-        ${msg}
-        <form action="MainController" >
-            UserID <input type="text" name="txtUserID" value="Vanan1010" />
-            Password <input type="password" name="txtPassword" value="Annguyen1234@" />
-            
-            <input type="submit" value="LOGIN" name="action" />
-        </form>
+      
+       
     </body>
 </html>

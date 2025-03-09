@@ -18,6 +18,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>MainController</welcome-file>
+        <welcome-file>productDetails.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
+

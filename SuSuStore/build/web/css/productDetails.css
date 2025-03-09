@@ -125,3 +125,35 @@ body {
     width: 30px;
     height: 30px;
 }
+footer {
+    margin-top: 50px;
+            background-color: #f7a831; /* Màu nền cam */
+            font-family: sans-serif;
+            color: black;
+            padding: 20px;
+        }
+.footer {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.left, .middle, .right {
+    flex: 1;
+}
+.left p, .middle p {
+    margin: 5px 0;
+}
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}

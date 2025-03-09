@@ -84,7 +84,7 @@
                     </div>
                     <p class="order-phone">Hoặc đặt mua: 0909300746 (Tư vấn Miễn phí)</p>
                     <div class="social-icons">
-                        <img src="https://static.vecteezy.com/system/resources/previews/020/964/386/original/facebook-circle-icon-for-web-design-free-png.png" alt="Facebook">
+                        <img src="" alt="Facebook">
                         <img src="path/to/twitter-icon.png" alt="Twitter">
                         <img src="path/to/pinterest-icon.png" alt="Pinterest">
                         <img src="path/to/messenger-icon.png" alt="Messenger">
